@@ -69,9 +69,9 @@ python -m venv .venv
 ### Ativa o ambiente virtual e depois instale o python-dotenv
 
 - No Windows(PoewerShell): \
-    `.\.venv\Scripts\Activate.ps1`
+  `.\.venv\Scripts\Activate.ps1`
 - No Linux/macOS: \
-    `source .venv/bin/activate`
+  `source .venv/bin/activate`
 
 ```sh
 pip install python-dotenv
@@ -80,7 +80,7 @@ pip install -r requirements.txt
 ```
 
 - Para instalar o projeto da pasta `src` usando o `pyproject.toml`: \
-    `pip install -e .`
+  `pip install -e .`
 
 > Pronto, agora siga digite `py-cli` no terminal para ver o resultado da executação do projeto.
 
@@ -98,6 +98,9 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 
 Links - ([pyenv](https://github.com/pyenv/pyenv) / [pyenv-win](https://github.com/pyenv-win/pyenv-win))
+
+- Install pyenv-win in PowerShell. \
+`Invoke-WebRequest -UseBasicParsing -Uri "https://raw.githubusercontent.com/pyenv-win/pyenv-win/master/pyenv-win/install-pyenv-win.ps1" -OutFile "./install-pyenv-win.ps1"; &"./install-pyenv-win.ps1"`
 
 Após a instalação, os comandos abaixo vão te ajudar.
 
@@ -166,6 +169,17 @@ uv tool install ruff
 uvx ruff
 uv tool uninstall ruff
 ```
+
+```sh
+# Formatação com ruff
+uvx ruff format ./src
+
+# Lint com ruff
+uvx ruff check ./src
+
+# Tipagem com pyright
+uvx pyright ./src
+``` 
 
 ---
 
