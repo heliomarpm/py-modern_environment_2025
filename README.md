@@ -244,4 +244,5 @@ variáveis de ambiente. Já deixei um teste na função principal que pode respo
 - `Check dotenv: dotenv is working fine`
 - `Check dotenv: Not working. Read the README.md`
 
-As mensagens são auto explicativas. Se você receber `Not working`, provavelmente não copiou o arquivo `.env-example` para `.env`.
+As mensagens são auto explicativas.
+Se você receber `Not working`, provavelmente não copiou o arquivo `.env-example` para `.env`.
