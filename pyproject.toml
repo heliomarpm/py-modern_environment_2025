@@ -1,0 +1,25 @@
+# ============================
+# Projeto
+# Referência: https://packaging.python.org/en/latest/guides/writing-pyproject-toml/
+#
+# Atenção: O nome do pacote principal deve ser consistente entre:
+#   - project.scripts
+#   - A pasta dentro de 'src/'
+# ============================
+[project]
+name = "py-modern-environment-2025"
+version = "0.0.1"
+description = "Projeto exemplo para ambientes Python modernos em 2025"
+readme = "README.md"
+license = "MIT"
+authors = [{ name = "Heliomar Marques", email = "heliomarpm@proton.me" }]
+requires-python = ">=3.14"
+dependencies = ["python-dotenv>=1.1.0"]
+
+[project.scripts]
+# Define os comandos de console. A chave ('py-cli') é o comando.
+# O valor aponta para 'nome_do_pacote.nome_do_modulo:nome_da_funcao'.
+# Ex: 'my_package.main:run' -> src/my_package/main.py (e a função run lá dentro).
+# Lembre-se de sincronizar o nome do pacote com 'known-first-party' do Ruff.
+py-cli = "my_package.my_module:run_from_script"
+
