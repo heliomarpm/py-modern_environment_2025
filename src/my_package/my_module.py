@@ -2,7 +2,7 @@ import os
 
 from dotenv import load_dotenv
 
-load_dotenv() # Carrega as variáveis de ambiente do arquivo .env
+load_dotenv()  # Carrega as variáveis de ambiente do arquivo .env
 
 
 def my_function(x: int, y: int) -> int:
