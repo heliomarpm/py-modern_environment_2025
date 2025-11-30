@@ -26,10 +26,12 @@ readme = "README.md"
 license = { text = "MIT" }
 authors = [{ name = "Heliomar Marques", email = "heliomarpm@proton.me" }]
 requires-python = ">=3.14"
-dependencies = ["python-dotenv>=1.1.0"]
+dependencies = [
+  "python-dotenv>=1.1.0",
+]
 
 [project.optional-dependencies]
-dev = ["ruff", "pyright", "pytest", "pytest-xdist"]
+dev = ["ruff", "pyright", "black>=25.11.0", "pytest", "pytest-xdist"]
 
 [project.scripts]
 # Define os comandos de console. A chave ('py-cli') é o comando.

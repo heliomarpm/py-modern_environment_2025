@@ -1,7 +1,8 @@
 {
-  "python.defaultInterpreterPath": ".\\.venv\\Scripts\\python.exe", // ou ./.venv/bin/python Mac/Linux
   "python.venvPath": ".venv",
-  "deepscan.enable": true,
+  "python.defaultInterpreterPath": ".\\.venv\\Scripts\\python.exe", // ou ./.venv/bin/python Mac/Linux
+  "python.formatting.provider": "black",
+  "ruff.enable": true,
   "editor.rulers": [120, 160],
   "editor.codeActionsOnSave": {
     "source": "always",

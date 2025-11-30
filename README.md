@@ -171,6 +171,9 @@ uv tool uninstall ruff
 ```
 
 ```sh
+# Formatação com black (não configurável)
+uvx black ./src
+
 # Formatação com ruff
 uvx ruff format ./src
 
